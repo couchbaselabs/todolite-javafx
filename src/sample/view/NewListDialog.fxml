@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.NewListController">
+    <children>
+        <ToolBar layoutX="7.0" layoutY="360.0" prefHeight="40.0" prefWidth="493.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <items>
+                <Button mnemonicParsing="false" onAction="#handleOk" text="OK" />
+                <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+            </items>
+        </ToolBar>
+          <Label layoutX="105.0" layoutY="46.0" prefHeight="16.0" prefWidth="92.0" text="New List Name" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="103.0" AnchorPane.topAnchor="46.0" />
+          <TextField fx:id="titleField" layoutX="69.0" layoutY="87.0" AnchorPane.leftAnchor="69.0" AnchorPane.rightAnchor="68.0" />
+    </children>
+</AnchorPane>
