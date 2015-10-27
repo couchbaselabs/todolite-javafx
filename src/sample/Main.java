@@ -15,6 +15,7 @@ import sample.model.Task;
 import sample.util.ModelHelper;
 import sample.view.overview.OverviewController;
 
+import javax.xml.crypto.Data;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -163,5 +164,33 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    private void startCouchbase() {
+        JavaContext context = new JavaContext();
+        Manager manager = null;
+        try {
+            manager = new Manager(context, Manager.DEFAULT_OPTIONS);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Database database = null;
+        try {
+            database = manager.getDatabase("myapp");
+        } catch (CouchbaseLiteException e) {
+            e.printStackTrace();
+        }
+
+        Map<String, Object> properties = new HashMap<String, Object>();
+
+        properties.put("session", "Couchbase Mobile");
+        properties.put("conference", "JavaOne");
+
+        Document document = database.createDocument();
+        try {
+            document.putProperties(properties);
+        } catch (CouchbaseLiteException e) {
+            e.printStackTrace();
+        }
     }
 }
