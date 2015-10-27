@@ -17,8 +17,8 @@ public class StorageManager {
 
     static private String localDatabase = "todolite";
 //    static private String remoteDatabase = "http://localhost:8000/todos";
-    static private String remoteDatabase = "http://192.168.99.101:4984/todos";
-//    static private String remoteDatabase = "http://9cec7a6e-jamiltz.node.tutum.io:4984/todos/";
+//    static private String remoteDatabase = "http://192.168.99.101:4984/todos";
+    static private String remoteDatabase = "http://9cec7a6e-jamiltz.node.tutum.io:4984/todos/";
     private Manager manager;
     public Database database;
 
