@@ -9,6 +9,8 @@ We won't cover TodoLite for Android in this post but you could have both applica
 
 ![](assets/thumbnail.png)
 
+You can find the source code of TodoLite JavaFX on [github](https://github.com/CouchbaseTutorials/todolite-javafx).
+
 ## TodoLite JavaFX
 
 To speed things up, you will clone some source code with the following:
