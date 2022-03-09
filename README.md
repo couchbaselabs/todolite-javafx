@@ -1,3 +1,5 @@
+⚠️ This repo is outdated.  It was built against a version of Couchbase Lite that reached end of life years ago.
+
 # TodoLite JavaFX
 
 ## Getting Started
